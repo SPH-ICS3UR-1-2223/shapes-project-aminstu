@@ -9,7 +9,10 @@ public class Rectangle {
 	
 	//methods
 	public Rectangle() {
-		
+		this.length=1;
+		this.width=1;
+		this.area = findArea();
+		this.perimeter = findPerimeter();
 	}
 	
 	public Rectangle(double side) {
@@ -20,12 +23,13 @@ public class Rectangle {
 		
 	}
 	
+	
 	private double findPerimeter() {
-		return 0;
+		return length+length+width+width;
 	}
 	
 	private double findArea() {
-		return 0;
+		return length*width;
 	}
 	
 	public void printStats() {
@@ -49,11 +53,11 @@ public class Rectangle {
 	}
 
 	public double getArea() {
-		return area;
+		return length*width;
 	}
 
 	public double getPerimeter() {
-		return perimeter;
+		return length+length+width+width;
 	}
 	
 	

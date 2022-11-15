@@ -16,11 +16,11 @@ public class Circle {
 	}
 	
 	private double findCircumference() {
-		return 0;
+		return Math.PI*;
 	}
 	
 	private double findArea() {
-		return 0;
+		return ;
 	}
 	
 	public void printStats() {

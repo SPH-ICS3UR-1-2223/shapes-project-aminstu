@@ -9,19 +9,24 @@ public class Triangle {
 	
 	//Methods
 	public Triangle() {
-		
+		this.sideA=this.sideB=this.sideC=1;
+		this.perimeter=findPerimeter();
+		this.area=findArea();
 	}
 	
 	public Triangle(double a, double b, double c) {
-		
+		this.sideA=a;
+		this.sideB=b;
+		this.sideC=c;
+		this.perimeter=findPerimeter();
 	}
 	
 	private double findPerimeter() {
-		return 0;
+		return sideA+sideB+sideC;
 	}
 	
 	private double findArea() {
-		return 0;
+		return sideA*sideB/2;
 	}
 	
 	public void printStats() {
